@@ -4,9 +4,9 @@ import Comments from './Comments'
 function RecipeIngredients(props) {
     const ingredients = props.ingredients.map((ingredient, index) => {
         return (
-            <li className="ingredient">
+            <li className="ingredient" key={index}>
                 <strong>{ingredient.name}</strong>: {ingredient.amount} {ingredient.measure}
-                <Comments />
+                <Comments indexType="ingredient" index={index}/>
             </li>
         )
     })

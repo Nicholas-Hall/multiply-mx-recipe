@@ -3,10 +3,11 @@ import Comments from './Comments'
 
 function RecipeSteps(props) {
     const steps = props.steps.map((step, index) => {
+
         return (
-            <li className="step">
+            <li className="step" key={index}>
                 {step}
-                <Comments />
+                <Comments indexType="recipe" index={index}/>
             </li>
         )
     })

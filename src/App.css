@@ -4,3 +4,37 @@
   margin-left:auto;
   margin-right:auto;
 }
+
+.upVoteCircle {
+  flex: 1;
+  background-color: lightgrey;
+  max-width: 30px;
+  max-height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.commentBody {
+  flex: 1;
+  text-align: center
+}
+
+.commentTextInput {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.upVoteButton {
+  width: 87px
+}
+
+.commentGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px
+}
